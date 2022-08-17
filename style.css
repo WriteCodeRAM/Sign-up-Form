@@ -47,6 +47,21 @@ body{
 
 }
 
+.attribution{
+    color:#f9fafb;
+    /* position: absolute;
+    bottom: 5px;
+    left: 175px; */
+    align-self: center;
+
+}
+
+.attribution a:hover{
+    color: #b0dee8;
+    
+
+}
+
 .text-content{
     margin: 0 40px;
     margin-bottom: 16px;
@@ -94,14 +109,7 @@ width: 60vw;
 
 }
 
-.attribution{
-    color:#f9fafb;
-    /* position: absolute;
-    bottom: 5px;
-    left: 175px; */
-    align-self: center;
 
-}
 
 a:any-link, a:visited{
     color: #f9fafb;
@@ -118,8 +126,14 @@ button{
   
     font-size: 2em;
     cursor: pointer;
-    color: #b1b1b1;
-    /* margin: 30px; */
+    background-color:  #69e5e7;
+    color:#f9fafb;
+    margin-inline-start: 30px;
+    flex-basis: 0.5;
+}
+
+button:hover{
+color: rgb(124, 190, 247);
 }
 
 .testing{
@@ -131,9 +145,19 @@ button{
     margin-right: 90px; 
 } 
 
+/* ------------ FORM STYLING / VALIDATION --------------- */
+
+
 input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
     width: 200px;
 }
+input:invalid{
+    border-color: red ;
+}
+input:valid{
+    border-color: rgb(28, 234, 52);
+}
+
 
 /* ------------MEDIA QUERIES --------------- */
 
@@ -161,11 +185,20 @@ input[type="text"], input[type="number"], input[type="password"], input[type="em
     }
 
     .logo{
-        display: none;
+        /* display: none; */
     }
 
     .tag p{
         font-size: large;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        margin-inline-start: 0;
     }
 
 }
