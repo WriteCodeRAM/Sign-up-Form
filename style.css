@@ -44,6 +44,7 @@ body{
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    border-right: solid 4px lightpink;
 
 }
 
@@ -57,7 +58,7 @@ body{
 }
 
 .attribution a:hover{
-    color: #b0dee8;
+    color: lightpink;
     
 
 }
@@ -133,7 +134,8 @@ button{
 }
 
 button:hover{
-color: rgb(124, 190, 247);
+color: lightpink;
+transition: 0.3s;
 }
 
 .testing{
@@ -218,5 +220,12 @@ input:valid{
 
        
     } 
+
+    .image-background{
+        border-right: none;
+        border-bottom: solid 3px lightpink;
+
+    }
+   
 
 }
